@@ -13,8 +13,8 @@ $( document ).ready(function() {
   else if ($("body.about").length > 0){
   	$('.nav_about').addClass('active');
   }
-  else if ($("body.billing").length > 0){
-  	$('.nav_billing').addClass('active');
+  else if ($("body.portal").length > 0){
+  	$('.nav_portal').addClass('active');
   }
   else if ($("body.faq").length > 0){
   	$('.nav_faq').addClass('active');
