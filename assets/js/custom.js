@@ -19,12 +19,12 @@ $( document ).ready(function() {
   else if ($("body.faq").length > 0){
   	$('.nav_faq').addClass('active');
   }
-  else if ($("body.blog").length > 0){
-  	$('.nav_blog').addClass('active');
+  else if ($("body.contact").length > 0){
+  	$('.nav_contact').addClass('active');
   }
 
   // Used for the Collapse (services page)
-  
+
   $(".collapse-link").click(function () {
     var $this = $(this);
     $('.collapse').removeClass("in")
