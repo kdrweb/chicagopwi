@@ -5,9 +5,12 @@
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 	<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+{% if page.page_name == "contact" %}
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript" src="assets/plugins/gmap.js"></script>
+	<script type="text/javascript" src="assets/js/page_contacts.js"></script>
+{% endif %}
 	<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/greensock.js"></script>
 	<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/layerslider.transitions.js"></script>
 	<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
@@ -15,7 +18,6 @@
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
-	<script type="text/javascript" src="assets/js/page_contacts.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/layer-slider.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
@@ -23,7 +25,9 @@
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
+		{% if page.page_name == "contact" %}
 			ContactPage.initMap();
+		{% endif %}
 			LayerSlider.initLayerSlider();
 			StyleSwitcher.initStyleSwitcher();
 			OwlCarousel.initOwlCarousel();
