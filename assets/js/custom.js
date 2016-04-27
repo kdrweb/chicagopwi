@@ -2,10 +2,10 @@ $( document ).ready(function() {
   // Used for the Nav
   if ($("body.home").length > 0){
   	$('.nav_home').addClass('active');
-  	$('.big-logo').removeClass('hidden');
-  	$('.header-sticky').removeClass('header-fixed-shrink');
-  	$('.small-logo').addClass('visible-xs-block').addClass('visible-sm-block');
-  	$('.nav.navbar-nav').addClass('big-nav');
+  	// $('.big-logo').removeClass('hidden');
+  	// $('.header-sticky').removeClass('header-fixed-shrink');
+  	// $('.small-logo').addClass('visible-xs-block').addClass('visible-sm-block');
+  	// $('.nav.navbar-nav').addClass('big-nav');
   }
   else if ($("body.services").length > 0){
   	$('.nav_services').addClass('active');
