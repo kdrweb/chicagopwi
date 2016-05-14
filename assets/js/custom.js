@@ -7,8 +7,11 @@ $( document ).ready(function() {
   	// $('.small-logo').addClass('visible-xs-block').addClass('visible-sm-block');
   	// $('.nav.navbar-nav').addClass('big-nav');
   }
-  else if ($("body.services").length > 0){
-  	$('.nav_services').addClass('active');
+  else if ($("body.pain_management").length > 0){
+  	$('.nav_pain_management').addClass('active');
+  }
+  else if ($("body.wellness").length > 0){
+  	$('.nav_wellness').addClass('active');
   }
   else if ($("body.about").length > 0){
   	$('.nav_about').addClass('active');
