@@ -62,3 +62,9 @@ p.white-text, .btn-u.btn-brd { color: #466cb9; }
   position: relative;
   color: #466cb9;
 }
+img.procedure-img{
+  width: 80%
+}
+img.product-img{
+  width: 25%
+}
